@@ -7,13 +7,13 @@ require 'model/organization'
 require 'config/settings.rb'
 
 module MiniSearch
-   get '/subscriptions' do
+   get '/candlepin/pools' do
     res = Subscription.my_subscription("#{params[:owner]}").search_for("#{params[:search]}")
     content_type :json
     res.to_json
   end
 
-  get '/subscriptions/auto_complete_search' do
+  get '/candlepin/pools/auto_complete_search' do
     res = Subscription.complete_for("#{params[:search]}") 
     content_type :json
     res.to_json
