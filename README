@@ -1,0 +1,8 @@
+Mini Search
+Using Sinatra to add search capability with scoped_search to a none-rails project.
+mini_search addes a RESTful Search API to a none-rails project in a simple and elegant way.
+The specific code for the application database is in config (The database connection string)
+and in the model directory (The search definition).
+For more information about the search syntax and definition see:
+scoped_search plugin.
+ 
